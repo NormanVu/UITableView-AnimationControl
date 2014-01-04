@@ -23,12 +23,23 @@ This is how you should use it:
 
 These are all methods available:
 
+### Inserting
+
 - `insertRowsAtIndexPaths:withRowAnimations:duration:completion:`
 - `insertSections:withRowAnimation:duration:completion:`
+
+### Deleting
+
 - `deleteRowsAtIndexPaths:withRowAnimations:duration:completion:`
 - `deleteRowsAtIndexPaths:withRowAnimation:duration:completion:`
+
+### Reloading
+
 - `reloadRowsAtIndexPaths:withRowAnimation:duration:completion:`
 - `reloadSections:withRowAnimation:duration:completion:`
+
+### Moving
+
 - `moveRowAtIndexPath:toIndexPath:duration:completion:`
 - `moveSection:toSection:duration:completion:`
 
