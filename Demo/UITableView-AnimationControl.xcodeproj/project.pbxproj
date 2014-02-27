@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7516BCB318BFAE8A00C6F733 /* UITableView+AnimationControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7516BCB218BFAE8A00C6F733 /* UITableView+AnimationControl.m */; };
 		75566C58187870CF003AE8E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75566C57187870CE003AE8E7 /* Foundation.framework */; };
 		75566C5A187870CF003AE8E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75566C59187870CF003AE8E7 /* CoreGraphics.framework */; };
 		75566C5C187870CF003AE8E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75566C5B187870CF003AE8E7 /* UIKit.framework */; };
@@ -20,7 +21,6 @@
 		75566C7B187870CF003AE8E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75566C79187870CF003AE8E7 /* InfoPlist.strings */; };
 		75566C7D187870CF003AE8E7 /* UITableView_AnimationControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75566C7C187870CF003AE8E7 /* UITableView_AnimationControlTests.m */; };
 		75566C88187870F2003AE8E7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75566C87187870F2003AE8E7 /* MainViewController.m */; };
-		75566C8B187870F8003AE8E7 /* UITableView+AnimationControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 75566C8A187870F8003AE8E7 /* UITableView+AnimationControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7516BCB118BFAE8A00C6F733 /* UITableView+AnimationControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+AnimationControl.h"; sourceTree = "<group>"; };
+		7516BCB218BFAE8A00C6F733 /* UITableView+AnimationControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+AnimationControl.m"; sourceTree = "<group>"; };
 		75566C54187870CE003AE8E7 /* UITableView-AnimationControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UITableView-AnimationControl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75566C57187870CE003AE8E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		75566C59187870CF003AE8E7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,8 +54,6 @@
 		75566C7C187870CF003AE8E7 /* UITableView_AnimationControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableView_AnimationControlTests.m; sourceTree = "<group>"; };
 		75566C86187870F2003AE8E7 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		75566C87187870F2003AE8E7 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		75566C89187870F8003AE8E7 /* UITableView+AnimationControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+AnimationControl.h"; sourceTree = "<group>"; };
-		75566C8A187870F8003AE8E7 /* UITableView+AnimationControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+AnimationControl.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +125,8 @@
 		75566C5E187870CF003AE8E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				75566C89187870F8003AE8E7 /* UITableView+AnimationControl.h */,
-				75566C8A187870F8003AE8E7 /* UITableView+AnimationControl.m */,
+				7516BCB118BFAE8A00C6F733 /* UITableView+AnimationControl.h */,
+				7516BCB218BFAE8A00C6F733 /* UITableView+AnimationControl.m */,
 				75566C69187870CF003AE8E7 /* Images.xcassets */,
 				75566C5F187870CF003AE8E7 /* UITableView-AnimationControl-Info.plist */,
 				75566C60187870CF003AE8E7 /* InfoPlist.strings */,
@@ -251,7 +251,7 @@
 			files = (
 				75566C68187870CF003AE8E7 /* AppDelegate.m in Sources */,
 				75566C88187870F2003AE8E7 /* MainViewController.m in Sources */,
-				75566C8B187870F8003AE8E7 /* UITableView+AnimationControl.m in Sources */,
+				7516BCB318BFAE8A00C6F733 /* UITableView+AnimationControl.m in Sources */,
 				75566C64187870CF003AE8E7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

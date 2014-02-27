@@ -54,9 +54,12 @@
     UITableViewRowAnimation rowAnimation = indexPath.row % 2 == 0 ? UITableViewRowAnimationLeft : UITableViewRowAnimationRight;
     
     [self.strings addObject:[NSString stringWithFormat:@"Cell %i", indexPath.row]];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:rowAnimation duration:duration completion:^{
+    
+    [self.tableView beginSmartUpdatesForDuration:duration];
+    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:rowAnimation completion:^{
         [self performSelector:@selector(insertRows) withObject:nil afterDelay:0.2];
     }];
+    [self.tableView endSmartUpdates];
 }
 
 - (void)deleteRows {
@@ -71,9 +74,12 @@
     UITableViewRowAnimation rowAnimation = indexPath.row % 2 == 0 ? UITableViewRowAnimationLeft : UITableViewRowAnimationRight;
     
     [self.strings removeLastObject];
-    [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:rowAnimation duration:duration completion:^{
+    
+    [self.tableView beginSmartUpdatesForDuration:duration];
+    [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:rowAnimation completion:^{
         [self performSelector:@selector(deleteRows) withObject:nil afterDelay:0.2];
     }];
+    [self.tableView endSmartUpdates];
 }
 
 #pragma mark - UITableView Data Source -

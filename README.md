@@ -1,7 +1,7 @@
 UITableView-AnimationControl
 ============================
 
-This UITableView category adds some really useful method additions as `insertRowsAtIndexPaths:withRowAnimations:duration:completion:`.
+Control the duration and completion of UITableView row/section-updating methods.
 
 ## CocoaPods
 
@@ -16,32 +16,36 @@ This is how you should use it:
 ```objective-c
 [self.tableViewDataArray addObject:object];
 
-[self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:rowAnimation duration:0.5 completion:^{
-	// Action when animation is over.
+[self.tableView beginSmartUpdatesForDuration:0.25];
+[self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:rowAnimation completion:^{
+	// Update animations ended. Do whatever you want!
 }];
+[self.tableView endSmartUpdates];
 ```
+
+Notice it gets integrated perfectly with `NSFetchedResultsController`.
 
 These are all methods available:
 
 ### Inserting
 
-- `insertRowsAtIndexPaths:withRowAnimations:duration:completion:`
-- `insertSections:withRowAnimation:duration:completion:`
+- `insertRowsAtIndexPaths:withRowAnimations:completion:`
+- `insertSections:withRowAnimation:completion:`
 
 ### Deleting
 
-- `deleteRowsAtIndexPaths:withRowAnimations:duration:completion:`
-- `deleteRowsAtIndexPaths:withRowAnimation:duration:completion:`
+- `deleteRowsAtIndexPaths:withRowAnimations:completion:`
+- `deleteSections:withRowAnimation:completion:`
 
 ### Reloading
 
-- `reloadRowsAtIndexPaths:withRowAnimation:duration:completion:`
-- `reloadSections:withRowAnimation:duration:completion:`
+- `reloadRowsAtIndexPaths:withRowAnimation:completion:`
+- `reloadSections:withRowAnimation:completion:`
 
 ### Moving
 
-- `moveRowAtIndexPath:toIndexPath:duration:completion:`
-- `moveSection:toSection:duration:completion:`
+- `moveRowAtIndexPath:toIndexPath:completion:`
+- `moveSection:toSection:completion:`
 
 ## Requirements
 
